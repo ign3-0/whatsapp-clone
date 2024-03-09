@@ -1,6 +1,6 @@
-import { getCurrentUser } from "@/app/actions/getCurrentUser";
+import { getCurrentUser } from "@/app/_actions/getCurrentUser";
 import DesktopSidebarHeader from "./DesktopSidebarHeader";
-import getConversations from "@/app/actions/getConversations";
+import getConversations from "@/app/_actions/getConversations";
 import ConversationList from "@/app/conversations/_components/ConversationList";
 
 async function Sidebar({ children }: {
@@ -14,7 +14,7 @@ async function Sidebar({ children }: {
         <aside className="h-full min-w-[300px] bg-zinc-400">
             <DesktopSidebarHeader />
             <ConversationList
-                // conversations={conversations}
+                conversations={conversations}
             />
         </aside>
         <main>

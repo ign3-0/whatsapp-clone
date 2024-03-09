@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       This Page Can Only be Seen by Authenticated Users
-      <UserButton afterSignOutUrl="/" />
+      <UserButton afterSignOutUrl="/sign-in" />
     </div>
   );
 }
